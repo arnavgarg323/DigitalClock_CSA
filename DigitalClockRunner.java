@@ -15,6 +15,9 @@ public class DigitalClockRunner
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
+        System.out.println("24h or 12h clock");
+        int is24 = input.nextInt();
+
         System.out.println("Hour:");
         int hour = input.nextInt();
 
@@ -24,11 +27,11 @@ public class DigitalClockRunner
         System.out.println("Second:");
         int second = input.nextInt();
 
-        buildClock(hour, minute, second);
+        buildClock(hour, minute, second ,is24);
 
     }
 
-    public static void buildClock(int h, int m, int s)
+    public static void buildClock(int h, int m, int s, int is24)
     {
         //setting up the Canvas
         StdDraw.enableDoubleBuffering();
@@ -37,7 +40,7 @@ public class DigitalClockRunner
         StdDraw.setFont(font);
 
         //subtract one second to allow time for Standard Draw to display to the Canvas
-        DigitalClock clock = new DigitalClock(h, m, s-1);
+        DigitalClock clock = new DigitalClock(h, m, s-1, is24);
 
         while (true)
         {

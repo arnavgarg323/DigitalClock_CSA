@@ -22,9 +22,9 @@ public class DigitalClock
      * make a call to the setTime method using the constructor's parameters as the 
      * setTime method's parameters
      */
-    public DigitalClock(int h, int m, int s)
+    public DigitalClock(int h, int m, int s, int clock)
     {
-        if (h>12){
+        if (clock == 24){
             is24 = true;
         }
         setTime(h, m, s);
