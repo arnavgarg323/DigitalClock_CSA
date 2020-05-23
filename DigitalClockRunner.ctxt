@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=DigitalClockRunner
+comment1.params=h\ m\ s
+comment1.target=void\ buildClock(int,\ int,\ int)
+comment1.text=\n\ This\ class\ is\ used\ to\ test\ your\ DigitalClock\ class.\n\ Run\ the\ buildClock\ method\ to\ see\ your\ clock\ in\ action.\n\ You'll\ need\ to\ provide\ an\ hour,\ minute,\ and\ second\ parameter.\n\n\ DO\ NOT\ MODIFY\ ANY\ OF\ THE\ CODE\ IN\ THIS\ CLASS,\ EVER.\ \n\ If\ you\ do,\ you\ run\ the\ risk\ of\ ruining\ the\ GUI\ (graphical\ user\ interface).\ \n
+numComments=2
